@@ -15802,6 +15802,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flag
       objectReference: {fileID: 0}
+    - target: {fileID: 8109166240925239910, guid: f572e8fd8a2600149ae7df92ba1d7abc,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1546810659}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
