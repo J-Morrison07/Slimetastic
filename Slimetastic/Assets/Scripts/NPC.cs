@@ -22,6 +22,8 @@ public class NPC : MonoBehaviour
     private StarterAssetsInputs _input;
     private ThirdPersonController _thirdPersonController;
     public GameObject dialogueBubble;
+    public List<GameObject> interactIcons = new List<GameObject>();
+    public int interactIconsIndex = 0;
     public GameObject talkButton;
     public GameObject textBox; 
     public GameObject textBoxShadow;
@@ -36,11 +38,17 @@ public class NPC : MonoBehaviour
         _input = player.GetComponent<StarterAssetsInputs>();
         _thirdPersonController = player.GetComponent<ThirdPersonController>();
         dialogueBubble.SetActive(false);
-        talkButton.SetActive(false);
+        //talkButton.SetActive(false);
+        interactIcons[0].SetActive(false);
+        interactIcons[1].SetActive(false);
+        interactIcons[2].SetActive(false);
         textBox.SetActive(false);
         textBoxShadow.SetActive(false);
         dialogueBubble.GetComponent<Animator>().ResetTrigger("Close");
-        talkButton.GetComponent<Animator>().ResetTrigger("Hide");
+        //talkButton.GetComponent<Animator>().ResetTrigger("Hide");
+        interactIcons[0].GetComponent<Animator>().ResetTrigger("Hide");
+        interactIcons[1].GetComponent<Animator>().ResetTrigger("Hide");
+        interactIcons[2].GetComponent<Animator>().ResetTrigger("Hide");
         textBoxText.text = pages[0];
         animator.ResetTrigger("Talk");
     }
@@ -48,10 +56,29 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        interactIconsIndex = PlayerPrefs.GetInt("Icons");
         if (playerDetection)
         {
             dialogueBubble.SetActive(true);
-            talkButton.SetActive(true);
+            //talkButton.SetActive(true);
+            if(interactIconsIndex == 0)
+            {
+                interactIcons[0].SetActive(true);
+                interactIcons[1].SetActive(false);
+                interactIcons[2].SetActive(false);
+            }
+            if (interactIconsIndex == 1)
+            {
+                interactIcons[0].SetActive(false);
+                interactIcons[1].SetActive(true);
+                interactIcons[2].SetActive(false);
+            }
+            if (interactIconsIndex == 2)
+            {
+                interactIcons[0].SetActive(false);
+                interactIcons[1].SetActive(false);
+                interactIcons[2].SetActive(true);
+            }
             if (_input.interact)
             {
                 textBoxShadow.SetActive(true);
@@ -81,7 +108,10 @@ public class NPC : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         dialogueBubble.GetComponent<Animator>().SetTrigger("Close");
-        talkButton.GetComponent<Animator>().SetTrigger("Hide");
+        //talkButton.GetComponent<Animator>().SetTrigger("Hide");
+        interactIcons[0].GetComponent<Animator>().SetTrigger("Hide");
+        interactIcons[1].GetComponent<Animator>().SetTrigger("Hide");
+        interactIcons[2].GetComponent<Animator>().SetTrigger("Hide");
         StartCoroutine(Wait(0.6f));
         playerDetection = false;
     }
@@ -90,7 +120,9 @@ public class NPC : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         dialogueBubble.SetActive(false);
-        talkButton.SetActive(false);
+        interactIcons[0].SetActive(false);
+        interactIcons[1].SetActive(false);
+        interactIcons[2].SetActive(false);
     }
 
     IEnumerator Interact(float time)

@@ -11,6 +11,7 @@ public class OptionsMenu : MonoBehaviour
     public GameObject resetButton;
     public GameObject tutorialButton;
     public GameObject quitButton;
+    public GameObject creditsButton;
     public GameObject backButton;
 
     private void Start()
@@ -28,6 +29,7 @@ public class OptionsMenu : MonoBehaviour
         resetButton.GetComponent<Button>().enabled = false;
         tutorialButton.GetComponent<Button>().enabled = false;
         quitButton.GetComponent<Button>().enabled = false;
+        creditsButton.GetComponent<Button>().enabled = false;
     }
 
     public void OnBack()
@@ -39,5 +41,6 @@ public class OptionsMenu : MonoBehaviour
         resetButton.GetComponent<Button>().enabled = true;
         tutorialButton.GetComponent<Button>().enabled = true;
         quitButton.GetComponent<Button>().enabled = true;
+        creditsButton.GetComponent<Button>().enabled = true;
     }
 }

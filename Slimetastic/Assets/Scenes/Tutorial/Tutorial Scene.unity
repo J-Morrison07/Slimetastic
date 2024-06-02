@@ -1341,12 +1341,12 @@ PrefabInstance:
     - target: {fileID: 180983187928722789, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 212
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 180983187928722789, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 37.5
+      value: 62.5
       objectReference: {fileID: 0}
     - target: {fileID: 1154747038283916850, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
@@ -1513,7 +1513,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 854495471}
     - target: {fileID: 6862196922578840283, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1522,7 +1522,7 @@ PrefabInstance:
     - target: {fileID: 6862196922578840283, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Back, Assembly-CSharp
+      value: Tutorial, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7300026928899977288, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
@@ -1535,6 +1535,16 @@ PrefabInstance:
       value: 'Back
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352500384678847410, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352500384678847410, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 8380980153881347918, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
@@ -1577,6 +1587,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 700972297}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &854495471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2527542181371313320, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+    type: 3}
+  m_PrefabInstance: {fileID: 700972297}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074364ef18e219043879b6957e5f1429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1000306391
 PrefabInstance:
   m_ObjectHideFlags: 0

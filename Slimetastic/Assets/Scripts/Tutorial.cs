@@ -10,19 +10,27 @@ public class Tutorial : MonoBehaviour
     public AudioSource audioSource;
     public void OnTutorial()
     {
-        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings-1);
+        animator.SetTrigger("Load");
+        audioSource.Play();
+        StartCoroutine(TutorialWait(1));
     }
 
     public void OnBack()
     {
         animator.SetTrigger("Load");
         audioSource.Play();
-        StartCoroutine(Wait(1));
+        StartCoroutine(BackWait(1));
     }
 
-    IEnumerator Wait(float time)
+    IEnumerator BackWait(float time)
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene(0);
+    }
+
+    IEnumerator TutorialWait(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
     }
 }

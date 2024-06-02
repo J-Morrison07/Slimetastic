@@ -140,16 +140,25 @@ public class Options : MonoBehaviour
             pauseIcons[0].SetActive(true);
             pauseIcons[1].SetActive(false);
             pauseIcons[2].SetActive(false);
+            interactIcons[0].SetActive(true);
+            interactIcons[1].SetActive(false);
+            interactIcons[2].SetActive(false);
         } else if (iconSet == 1)
         {
             pauseIcons[0].SetActive(false);
             pauseIcons[1].SetActive(true);
             pauseIcons[2].SetActive(false);
+            interactIcons[0].SetActive(false);
+            interactIcons[1].SetActive(true);
+            interactIcons[2].SetActive(false);
         } else
         {
             pauseIcons[0].SetActive(false);
             pauseIcons[1].SetActive(false);
             pauseIcons[2].SetActive(true);
+            interactIcons[0].SetActive(false);
+            interactIcons[1].SetActive(false);
+            interactIcons[2].SetActive(true);
         }
     }
 }
