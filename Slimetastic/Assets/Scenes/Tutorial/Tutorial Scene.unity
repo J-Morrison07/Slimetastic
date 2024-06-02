@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 555393845}
+  m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &119063822
@@ -212,12 +212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &555393845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7300026928899977288, guid: 17b7b3a50b235e0429f88c3c3ab49840,
-    type: 3}
-  m_PrefabInstance: {fileID: 700972297}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &700972297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -235,6 +229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 180983187928722789, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 212
       objectReference: {fileID: 0}
     - target: {fileID: 180983187928722789, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
@@ -356,6 +355,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6756804943438107796, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6862196922578840283, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -386,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 8380980153881347918, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6048290783600603070, guid: 17b7b3a50b235e0429f88c3c3ab49840, type: 3}
@@ -837,19 +841,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Walk - W,A,S,D or Left Stick
-
-    Jump - Space or Button South
-
-    Sprint
-    - Left Shift or Left Trigger
-
-    Interact - E or Button South
-
-    Pause - P
-    or Select
-
-    Home - Escape or Start'
+  m_text: "Walk - \t or \t\nJump - \t or \t\nSprint -\t or \t\nInteract -\t or \t\nPause
+    - \t or \t\nHome - \t or \t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}

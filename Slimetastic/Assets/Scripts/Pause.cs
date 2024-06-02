@@ -10,10 +10,15 @@ public class Pause : MonoBehaviour
 {
     public StarterAssetsInputs _input;
     public GameObject pause;
+    public GameObject pauseicon;
+    public GameObject playicon;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         pause.SetActive(false);
+        pauseicon.SetActive(true);
+        playicon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,12 +27,18 @@ public class Pause : MonoBehaviour
         if (_input.pause)
         {
             pause.SetActive(true);
-            Time.timeScale = 0.01f;
+            player.GetComponent<ThirdPersonController>().enabled = false;
+            player.GetComponent<Animator>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
+            pauseicon.SetActive(false);
+            playicon.SetActive(true);
         } else
         {
-            Time.timeScale = 1;
             pause.SetActive(false);
+            player.GetComponent<ThirdPersonController>().enabled = true;
+            player.GetComponent<Animator>().enabled = true;
+            pauseicon.SetActive(true);
+            playicon.SetActive(false);
         }
     }
 
@@ -35,7 +46,6 @@ public class Pause : MonoBehaviour
     {
         _input.pause = false;
         Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 }

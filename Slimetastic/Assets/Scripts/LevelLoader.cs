@@ -21,6 +21,7 @@ public class LevelLoader : MonoBehaviour
             resetButton.SetActive(true);
         }
     }
+
     public void OnPlay()
     {
         animator.SetTrigger("Load");
@@ -34,14 +35,21 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(level);
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void OnReset()
+    {
+        StartCoroutine(ResetWait(0.2f));
+    }
+    IEnumerator ResetWait(float time)
+    {
+        yield return new WaitForSeconds(time);
+        level = 1;
+        PlayerPrefs.SetInt("Level", level);
+        resetButton.SetActive(false);
+    }
     public void OnQuit()
     {
         Application.Quit();
     }
 
-    public void OnReset()
-    {
-        level = 1;
-        PlayerPrefs.SetInt("Level", level);
-    }
 }

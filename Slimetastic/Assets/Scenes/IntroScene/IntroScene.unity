@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125}
+  m_AnchoredPosition: {x: 0, y: -75}
   m_SizeDelta: {x: 240, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &149770525
@@ -648,10 +648,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 333094804489954321, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116943124921108683, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1704638395080117623, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929696612683075608, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929696612683075608, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 6068367551150701113, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
@@ -753,6 +773,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6862196922578840283, guid: 17b7b3a50b235e0429f88c3c3ab49840,
+        type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8380980153881347918, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_IsActive
@@ -761,7 +786,7 @@ PrefabInstance:
     - target: {fileID: 8941878956298404844, guid: 17b7b3a50b235e0429f88c3c3ab49840,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: -150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

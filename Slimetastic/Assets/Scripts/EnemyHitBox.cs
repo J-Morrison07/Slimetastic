@@ -5,7 +5,7 @@ using static UnityEngine.ParticleSystem;
 
 public class EnemyHitBox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject enemy;
     public ParticleSystem particles;
     public AudioSource SFX;
     public Animator animator;
@@ -20,8 +20,7 @@ public class EnemyHitBox : MonoBehaviour
             animator.SetTrigger("die");
             particles.Play();
             SFX.PlayDelayed(0.2f);
-            other.gameObject.GetComponent<CharacterController>().Move(nockback);
-            other.gameObject.GetComponent<Animator>().SetBool("Jump", true);
+            other.gameObject.GetComponent<Animator>().SetBool("Enemy", true);
             hit = true;
         }
     }
@@ -29,7 +28,7 @@ public class EnemyHitBox : MonoBehaviour
     {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(this.time);
-        Destroy(player);
-        other.gameObject.GetComponent<Animator>().SetBool("Jump", false);
+        Destroy(enemy);
+        other.gameObject.GetComponent<Animator>().SetBool("Enemy", false);
     }
 }
