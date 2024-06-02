@@ -166,6 +166,10 @@ MonoBehaviour:
   - {fileID: 1867521898}
   - {fileID: 1867521898}
   - {fileID: 1867521898}
+  nextInteractIcons:
+  - {fileID: 1867521898}
+  - {fileID: 1867521898}
+  - {fileID: 1867521898}
   volume: 0
   musicVolume: 0
   effectsVolume: 0

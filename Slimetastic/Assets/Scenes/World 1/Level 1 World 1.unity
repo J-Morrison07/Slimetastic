@@ -7830,11 +7830,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3517555987989919658, guid: 1d38619915b39ad4c9b8ab0db034b95c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4740890197476795341, guid: 1d38619915b39ad4c9b8ab0db034b95c,
         type: 3}
       propertyPath: m_Name
@@ -7889,6 +7884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343593295524506412, guid: 1d38619915b39ad4c9b8ab0db034b95c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8436935645935475775, guid: 1d38619915b39ad4c9b8ab0db034b95c,
         type: 3}
@@ -13516,6 +13516,26 @@ PrefabInstance:
       propertyPath: pages.Array.data[2]
       value: If you eat 5 Carrots you gain 1 Heart
       objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1911834627}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 2025664176}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1332496075}
     - target: {fileID: 5606017901141638902, guid: 618bdb30fcd5b9d4280248f19c33b368,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18766,6 +18786,26 @@ PrefabInstance:
       propertyPath: pages.Array.data[2]
       value: If you eat 5 Carrots you gain 1 Heart
       objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1911834627}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 2025664176}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1332496075}
     - target: {fileID: 5606017901141638902, guid: 618bdb30fcd5b9d4280248f19c33b368,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22726,6 +22766,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b924dce73e13fbd46b06d493f10d4ad7, type: 3}
+--- !u!1 &1332496075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4931025922435330338, guid: 1d38619915b39ad4c9b8ab0db034b95c,
+    type: 3}
+  m_PrefabInstance: {fileID: 452815674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1335227947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34581,6 +34627,12 @@ Transform:
   - {fileID: 1188589551}
   m_Father: {fileID: 649667607}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2025664176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3517555987989919658, guid: 1d38619915b39ad4c9b8ab0db034b95c,
+    type: 3}
+  m_PrefabInstance: {fileID: 452815674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2029733256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1148022974196375358, guid: 44d597db6ea17b6418efbd041526d4e9,
@@ -37678,6 +37730,26 @@ PrefabInstance:
       propertyPath: pages.Array.data[4]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1911834627}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 2025664176}
+    - target: {fileID: 4787464002067913815, guid: 618bdb30fcd5b9d4280248f19c33b368,
+        type: 3}
+      propertyPath: interactIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1332496075}
     - target: {fileID: 5606017901141638902, guid: 618bdb30fcd5b9d4280248f19c33b368,
         type: 3}
       propertyPath: m_LocalPosition.x

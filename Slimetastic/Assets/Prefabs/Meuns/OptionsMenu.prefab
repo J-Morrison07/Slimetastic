@@ -497,7 +497,6 @@ RectTransform:
   m_Children:
   - {fileID: 3517047038603783997}
   - {fileID: 2747248702578470368}
-  - {fileID: 2866878408853904589}
   m_Father: {fileID: 6292896200724060111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -839,7 +838,6 @@ RectTransform:
   m_Children:
   - {fileID: 3115140758300593672}
   - {fileID: 6194404671112940260}
-  - {fileID: 7838618813072785771}
   m_Father: {fileID: 6292896200724060111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2504,12 +2502,12 @@ RectTransform:
   m_Children:
   - {fileID: 6426852426434611446}
   - {fileID: 6836895124833570362}
-  m_Father: {fileID: 3648522371208156425}
+  m_Father: {fileID: 2747248702578470368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -35.55, y: -23}
-  m_SizeDelta: {x: 71.1, y: 150}
+  m_AnchoredPosition: {x: -35.55, y: 2}
+  m_SizeDelta: {x: -58.9, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8846158887126273576
 CanvasRenderer:
@@ -2956,6 +2954,7 @@ RectTransform:
   m_Children:
   - {fileID: 8520068180042854250}
   - {fileID: 9149158726301791850}
+  - {fileID: 7838618813072785771}
   m_Father: {fileID: 7908467067665120046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3127,12 +3126,12 @@ RectTransform:
   m_Children:
   - {fileID: 8064681922879942585}
   - {fileID: 4976023497573834313}
-  m_Father: {fileID: 7908467067665120046}
+  m_Father: {fileID: 6194404671112940260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -23}
-  m_SizeDelta: {x: 130, y: 150}
+  m_AnchoredPosition: {x: 0, y: 2}
+  m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5399808272850563390
 CanvasRenderer:
@@ -3669,6 +3668,7 @@ RectTransform:
   m_Children:
   - {fileID: 3497853633507010845}
   - {fileID: 3783327710951491979}
+  - {fileID: 2866878408853904589}
   m_Father: {fileID: 3648522371208156425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}

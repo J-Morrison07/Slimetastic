@@ -24,7 +24,7 @@ public class NPC : MonoBehaviour
     public GameObject dialogueBubble;
     public List<GameObject> interactIcons = new List<GameObject>();
     public int interactIconsIndex = 0;
-    public GameObject talkButton;
+    //public GameObject talkButton;
     public GameObject textBox; 
     public GameObject textBoxShadow;
     public TextMeshProUGUI nameText;

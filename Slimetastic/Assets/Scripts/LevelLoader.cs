@@ -34,6 +34,7 @@ public class LevelLoader : MonoBehaviour
         PlayerPrefs.SetInt("Level", level);
         SceneManager.LoadScene(level);
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void OnReset()

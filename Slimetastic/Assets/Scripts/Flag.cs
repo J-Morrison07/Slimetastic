@@ -28,5 +28,6 @@ public class Flag : MonoBehaviour
         PlayerPrefs.SetInt("Level", LevelLoader.level);
         SceneManager.LoadScene(LevelLoader.level);
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

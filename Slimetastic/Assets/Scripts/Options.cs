@@ -21,10 +21,10 @@ public class Options : MonoBehaviour
     public TMP_Dropdown iconsDropdown;
     public List<GameObject> pauseIcons = new List<GameObject>();
     public List<GameObject> interactIcons = new List<GameObject>();
+    public List<GameObject> nextInteractIcons = new List<GameObject>();
     public float volume;
     public float musicVolume;
     public float effectsVolume;
-    public string fullsreened;
     Resolution[] resolutions;
     public int icons;
     
@@ -46,28 +46,18 @@ public class Options : MonoBehaviour
         SetEffectsVolume(effectsVolume);
         effectsSlider.value = effectsVolume;
 
-        fullsreened = PlayerPrefs.GetString("isFullsreen", "true");
-        if (fullsreened == "true")
-        {
-            SetFullsreen(true);
-            fullscreen.isOn = true;
-        } else
-        {
-            SetFullsreen(false);
-            fullscreen.isOn = false;
-        }
-
         resolutions = Screen.resolutions;
         reslutionsDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
-        int currentReslutionIndex = 0;
+        int currentReslutionIndex = resolutions.Length;
+
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + " X " + resolutions[i].height;
-            options.Add(option);
-
+           string option = resolutions[i].width + " X " + resolutions[i].height;
+           options.Add(option);
+            
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 currentReslutionIndex = i;
@@ -120,8 +110,7 @@ public class Options : MonoBehaviour
 
     public void SetFullsreen(bool isFullsreen)
     {
-        PlayerPrefs.SetString("isFullsreen", isFullsreen.ToString());
-        fullsreened = PlayerPrefs.GetString("isFullsreen", "true");
+        fullscreen.isOn = isFullsreen;
         Screen.fullScreen = isFullsreen;
     }
 
@@ -140,25 +129,25 @@ public class Options : MonoBehaviour
             pauseIcons[0].SetActive(true);
             pauseIcons[1].SetActive(false);
             pauseIcons[2].SetActive(false);
-            interactIcons[0].SetActive(true);
-            interactIcons[1].SetActive(false);
-            interactIcons[2].SetActive(false);
+            nextInteractIcons[0].SetActive(true);
+            nextInteractIcons[1].SetActive(false);
+            nextInteractIcons[2].SetActive(false);
         } else if (iconSet == 1)
         {
             pauseIcons[0].SetActive(false);
             pauseIcons[1].SetActive(true);
             pauseIcons[2].SetActive(false);
-            interactIcons[0].SetActive(false);
-            interactIcons[1].SetActive(true);
-            interactIcons[2].SetActive(false);
+            nextInteractIcons[0].SetActive(false);
+            nextInteractIcons[1].SetActive(true);
+            nextInteractIcons[2].SetActive(false);
         } else
         {
             pauseIcons[0].SetActive(false);
             pauseIcons[1].SetActive(false);
             pauseIcons[2].SetActive(true);
-            interactIcons[0].SetActive(false);
-            interactIcons[1].SetActive(false);
-            interactIcons[2].SetActive(true);
+            nextInteractIcons[0].SetActive(false);
+            nextInteractIcons[1].SetActive(false);
+            nextInteractIcons[2].SetActive(true);
         }
     }
 }

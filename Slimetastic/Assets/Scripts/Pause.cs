@@ -30,6 +30,7 @@ public class Pause : MonoBehaviour
             player.GetComponent<ThirdPersonController>().enabled = false;
             player.GetComponent<Animator>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             pauseicon.SetActive(false);
             playicon.SetActive(true);
         } else
@@ -46,6 +47,7 @@ public class Pause : MonoBehaviour
     {
         _input.pause = false;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
 }
