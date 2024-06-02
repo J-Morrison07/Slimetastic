@@ -6,3 +6,4 @@ Cmd: compileSnippet
   error: 1 plat 4 at C:/Users/Jakeo/OneDrive/Documents/GitHub/Slimetastic/Slimetastic/Library/PackageCache/com.unity.render-pipelines.universal@14.0.8/Editor/ShaderGraph/Includes/Varyings.hlsl(142): 'UnityEditorVizData': implicit truncation of vector type
  ok=1 outsize=1886
 
+Cmd: shutdown

@@ -13,9 +13,6 @@
             "m_Id": "b6f2cef667474cc4a6c4d33546c2f5e5"
         },
         {
-            "m_Id": "3209395d0051410cbbe3a2571849ce0b"
-        },
-        {
             "m_Id": "92ea9c6c9fd04352810dcc568815ae4b"
         }
     ],
@@ -472,36 +469,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 3,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
-    "m_ObjectId": "3209395d0051410cbbe3a2571849ce0b",
-    "m_Guid": {
-        "m_GuidSerialized": "97600ed6-99f7-4f19-b511-56e14a5dc2b9"
-    },
-    "m_Name": "Foam Color",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Foam Color",
-    "m_DefaultReferenceName": "_Foam_Color",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 1.0
-    },
-    "isMainColor": false,
-    "m_ColorMode": 0
 }
 
 {
@@ -1725,9 +1692,6 @@
     "m_ChildObjectList": [
         {
             "m_Id": "ab90bbd7c03c40148f8755886ac9c195"
-        },
-        {
-            "m_Id": "3209395d0051410cbbe3a2571849ce0b"
         },
         {
             "m_Id": "b5dff34dac0844e090ed9ee813d9418f"

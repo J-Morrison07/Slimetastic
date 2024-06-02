@@ -81,7 +81,8 @@ AudioSource:
   m_GameObject: {fileID: 7921240727183961719}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4421018932945738027, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 0ccebcb9c0b05994691ee72df8ea9f8a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -179,7 +180,6 @@ GameObject:
   - component: {fileID: 771149161384045887}
   - component: {fileID: 6780564312091298556}
   - component: {fileID: 693675319082950937}
-  - component: {fileID: 1356688821971461767}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -252,28 +252,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1356688821971461767
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8004336002152067893}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &3203001518265034470
 PrefabInstance:
   m_ObjectHideFlags: 0

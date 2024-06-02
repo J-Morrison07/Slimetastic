@@ -470,7 +470,8 @@ AudioSource:
   m_GameObject: {fileID: 8068832015593049296}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4421018932945738027, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 89c23c0f00aba42daab13371654384b4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -566,7 +567,8 @@ AudioSource:
   m_GameObject: {fileID: 8068832015593049296}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4421018932945738027, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 3801dea314808451ca9704bcffd75ef7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -662,7 +664,8 @@ AudioSource:
   m_GameObject: {fileID: 8068832015593049296}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4421018932945738027, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 21ba4f1a293a2487587068d7bbe15106, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -758,7 +761,8 @@ AudioSource:
   m_GameObject: {fileID: 8068832015593049296}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4421018932945738027, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 1e3f4ef5345e94cbc9996ecad61bc9e6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1040,17 +1044,17 @@ PrefabInstance:
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.8235295
+      value: 0.99607843
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.8431373
+      value: 0.8901961
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.63529414
+      value: 0.6431373
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
@@ -1145,7 +1149,8 @@ AudioSource:
   m_GameObject: {fileID: 279447521955572349}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6061726799620825523, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 1728c429aebdf412ab76d617e40d8845, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.75
@@ -1241,7 +1246,8 @@ AudioSource:
   m_GameObject: {fileID: 279447521955572349}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6061726799620825523, guid: 0361e9b7d9abba141b7986da24d0176c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b6891bf38a3df44b29d9271a7acfea03, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.75
