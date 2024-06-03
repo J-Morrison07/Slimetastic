@@ -23,7 +23,7 @@ public class Flag : MonoBehaviour
     {
         animator.SetTrigger("Load");
         audioSource.Play();
-        StartCoroutine(Wait(1));
+        StartCoroutine(Wait(3));
     }
 
     IEnumerator Wait(float time)
