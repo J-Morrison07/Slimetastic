@@ -8,6 +8,11 @@ public class Credits : MonoBehaviour
 {
     public Animator animator;
     public AudioSource audioSource;
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
     public void OnBack()
     {
         animator.SetTrigger("Load");

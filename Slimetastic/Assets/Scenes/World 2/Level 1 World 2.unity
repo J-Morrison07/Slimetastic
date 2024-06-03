@@ -10165,6 +10165,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 230886957160468184, guid: d49354407c7c5d84fb416d0b50d02e69,
         type: 3}
+      propertyPath: pages.Array.data[0]
+      value: Highway 333
+      objectReference: {fileID: 0}
+    - target: {fileID: 230886957160468184, guid: d49354407c7c5d84fb416d0b50d02e69,
+        type: 3}
       propertyPath: pages.Array.data[1]
       value: <- EZ Route
       objectReference: {fileID: 0}
