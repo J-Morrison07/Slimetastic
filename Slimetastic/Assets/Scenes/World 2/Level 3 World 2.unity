@@ -47208,6 +47208,11 @@ PrefabInstance:
       propertyPath: field of view
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 1974741043893729176, guid: db92fc7324cf3bb489e730baead76711,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 74e6b3a68aec243f8ace89e051030864, type: 3}
     - target: {fileID: 2095717871239970432, guid: db92fc7324cf3bb489e730baead76711,
         type: 3}
       propertyPath: m_Name
@@ -47263,6 +47268,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3173219949906484861, guid: db92fc7324cf3bb489e730baead76711,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 03b28d4c7405e4fa3864377a171cf308, type: 3}
     - target: {fileID: 4559651095013825920, guid: db92fc7324cf3bb489e730baead76711,
         type: 3}
       propertyPath: scoreText

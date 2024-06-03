@@ -13,12 +13,16 @@ public class Pause : MonoBehaviour
     public GameObject pauseicon;
     public GameObject playicon;
     public GameObject player;
+    private float speed;
+    private float sprint;
     // Start is called before the first frame update
     void Start()
     {
         pause.SetActive(false);
         pauseicon.SetActive(true);
         playicon.SetActive(false);
+        speed = player.GetComponent<ThirdPersonController>().MoveSpeed;
+        sprint = player.GetComponent<ThirdPersonController>().SprintSpeed;
     }
 
     // Update is called once per frame
@@ -27,7 +31,9 @@ public class Pause : MonoBehaviour
         if (_input.pause)
         {
             pause.SetActive(true);
-            player.GetComponent<ThirdPersonController>().enabled = false;
+            player.GetComponent<ThirdPersonController>().MoveSpeed = 0f;
+            player.GetComponent<ThirdPersonController>().SprintSpeed = 0f;
+            _input.jump = false;
             player.GetComponent<Animator>().enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -36,11 +42,12 @@ public class Pause : MonoBehaviour
         } else
         {
             pause.SetActive(false);
-            player.GetComponent<ThirdPersonController>().enabled = true;
+            player.GetComponent<ThirdPersonController>().MoveSpeed = speed;
+            player.GetComponent<ThirdPersonController>().SprintSpeed = sprint;
             player.GetComponent<Animator>().enabled = true;
             pauseicon.SetActive(true);
             playicon.SetActive(false);
-        }
+        } 
     }
 
     public void OnHome()
